@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMPRE INTERNET - ASN28198</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div>
+        <p id="logo"><img id="logo_sempre" src="/img/chatisse_Prancheta 1.png" alt="logo_sempre"></p>
+        <h1>SEMPRE INTERNET - ASN28198</h1>
+        <h2>BGP COMMUNITIES</h2>
+        <h3>Communities Especiais</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:666</td>
+                    <td>Blackhole</td>
+                    <td>O tráfego destinado a hosts dentro da rede da Sempre será descartado. Somente máscaras /32 e /128 são aceitas nesta community.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Communities de Engenharia de Tráfego</h3>
+        <ul>
+            <li>O uso dessas communities permite que os clientes manipulem os anuncios de forma que achar melhor para a engenharia de tráfego de sua rede.</li>
+        </ul>
+
+        <h3>TRÂNSITO</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:65500</td>
+                    <td>Cirion</td>
+                    <td>No Export Cirion</td>
+                </tr>
+                <tr>
+                    <td>28198:65501</td>
+                    <td>Algar</td>
+                    <td>No Export Algar</td>
+                </tr>
+                <tr>
+                    <td>28198:65503</td>
+                    <td>ATC</td>
+                    <td>No Export American Tower</td>
+                </tr>
+                <tr>
+                    <td>28198:65504</td>
+                    <td>Seaborn</td>
+                    <td>No Export Seaborn</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h3>CDN</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:65400</td>
+                    <td>Netflix</td>
+                    <td>No Export CDN Netflix</td>
+                </tr>
+                <tr>
+                    <td>28198:65401</td>
+                    <td>Facebook</td>
+                    <td>No Export CDN Facebook</td>
+                </tr>
+                <tr>
+                    <td>28198:65402</td>
+                    <td>Google</td>
+                    <td>No Export CDN Google</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h3>IX</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:65300</td>
+                    <td>São Paulo</td>
+                    <td>No Export IX-SP</td>
+                </tr>
+                <tr>
+                    <td>28198:65200</td>
+                    <td>Minas Gerais</td>
+                    <td>No Export IX-MG</td>
+                </tr>
+                <tr>
+                    <td>28198:65100</td>
+                    <td>Rio de Janeiro</td>
+                    <td>No Export IX-RJ</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h3>PEERING</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:64800</td>
+                    <td>Peering</td>
+                    <td>No Export Peering</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>PNI</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>28198:64900</td>
+                    <td>PNI</td>
+                    <td>No Export PNI</td>
+                </tr>
+                    <td>28198:64901</td>
+                    <td>GOOGLE</td>
+                    <td>No Export PNI Google</td>
+                <tr>
+                    <td>28198:64902</td>
+                    <td>GLOBO-MG</td>
+                    <td>No Export Globo-MG</td>
+                </tr>
+                <tr>
+                    <td>28198:64903</td>
+                    <td>TWITCH</td>
+                    <td>No Export PNI Twitch</td>
+                </tr>
+                <tr>
+                    <td>28198:64904</td>
+                    <td>AMAZON</td>
+                    <td>No Export PNI Amazon</td>
+                </tr>
+                <tr>
+                    <td>28198:64905</td>
+                    <td>EDGECAST</td>
+                    <td>No Export PNI Edgecast</td>
+                </tr>
+                <tr>
+                    <td>28198:64906</td>
+                    <td>FACEBOOK</td>
+                    <td>No Export PNI Facebook</td>
+                </tr>
+                <tr>
+                    <td>28198:64907</td>
+                    <td>AKAMAI</td>
+                    <td>No Export PNI Akakmai</td>
+                </tr>
+                    
+            </tbody>
+        </table>
+
+        <h3>PREPPEND</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>65510:3356</td>
+                    <td>Prepend 1x Cirion</td>
+                </tr>
+                <tr>
+                    <td>65520:3356</td>
+                    <td>Prepend 2x Cirion</td>
+                </tr>
+                <tr>
+                    <td>65530:3356</td>
+                    <td>Prepend 3x Cirion</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <p>A Sempre se coloca à disposição, mas para agilizar seu atendimento, tenha em mãos a designação ded seu circuito sempre que necessitar acionar o suporte.</p>
+    </div>
+</body>
+
+<footer>
+    <img src="" alt="" >
+    <h3>Suporte Técnico 24 horas</h3>
+    <h3>NOC - 0800 600 0800</h3>
+</footer>
+</html>
