@@ -8,11 +8,11 @@
 </head>
 <body>
     <div>
-        <p id="logo"><img id="logo_sempre" src="/img/chatisse_Prancheta 1.png" alt="logo_sempre"></p>
+        <img id="logo_sempre" src="/img/Logo sempre branca fundo azul.png" alt="logo_sempre">
         <h1>SEMPRE INTERNET - ASN28198</h1>
         <h2>BGP COMMUNITIES</h2>
         <h3>Communities Especiais</h3>
-        <table>
+        <table id="table_blackhole">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -29,10 +29,9 @@
             </tbody>
         </table>
 
-        <h3>Communities de Engenharia de Tráfego</h3>
-        <ul>
-            <li>O uso dessas communities permite que os clientes manipulem os anuncios de forma que achar melhor para a engenharia de tráfego de sua rede.</li>
-        </ul>
+        <h2>Communities de Engenharia de Tráfego</h3>
+        
+        <p>O uso dessas communities permite que os clientes manipulem os anuncios de forma que achar melhor para a engenharia de tráfego de sua rede.</p>
 
         <h3>TRÂNSITO</h3>
         <table>
@@ -196,17 +195,19 @@
             </tbody>
         </table>
 
-        <h3>PREPPEND</h3>
-        <table>
+        <h3>PREPEND</h3>
+        <table id="table_preppend">
             <thead>
                 <tr>
                     <th>Community</th>
                     <th>Descrição</th>
+                    <th>Notas</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>65510:3356</td>
+                    <td rowspan="3">Cirion</td>
                     <td>Prepend 1x Cirion</td>
                 </tr>
                 <tr>
@@ -217,16 +218,104 @@
                     <td>65530:3356</td>
                     <td>Prepend 3x Cirion</td>
                 </tr>
+
+                <tr>
+                    <td>65511:16735</td>
+                    <td rowspan="3">Algar</td>
+                    <td>Prepend 1x Algar</td>
+                </tr>
+                <tr>
+                    <td>65521:16735</td>
+                    <td>Prepend 2x Algar</td>
+                </tr>
+                <tr>
+                    <td>65531:16735</td>
+                    <td>Prepend 3x Algar</td>
+                </tr>
+
+                <tr>
+                    <td>65511:23106</td>
+                    <td rowspan="3">ATC-BH</td>
+                    <td>Prepend 1x ATC-BH</td>
+                </tr>
+                <tr>
+                    <td>65521:23106</td>
+                    <td>Prepend 2x ATC-BH</td>
+                </tr>
+                <tr>
+                    <td>65531:23106</td>
+                    <td>Prepend 3x ATC-BH</td>
+                </tr>
+                
+                <tr>
+                    <td>65511:13786</td>
+                    <td rowspan="3">Seaborn</td>
+                    <td>Prepend 1x Seaborn</td>
+                </tr>
+                <tr>
+                    <td>65521:13786</td>
+                    <td>Prepend 2x Seaborn</td>
+                </tr>
+                <tr>
+                    <td>65531:13786</td>
+                    <td>Prepend 3x Seaborn</td>
+                </tr>
+
+                <tr>
+                    <td>65511:26162</td>
+                    <td rowspan="3">IX-SP</td>
+                    <td>Prepend 1x IX-SP</td>
+                </tr>
+                <tr>
+                    <td>65521:26162</td>
+                    <td>Prepend 2x IX-SP</td>
+                </tr>
+                <tr>
+                    <td>65531:26162</td>
+                    <td>Prepend 3x IX-SP</td>
+                </tr>
+
+                <tr>
+                    <td>28198:65210</td>
+                    <td rowspan="3">IX-MG</td>
+                    <td>Prepend 1x IX-MG</td>
+                </tr>
+                <tr>
+                    <td>28198:65220</td>
+                    <td>Prepend 2x IX-MG</td>
+                </tr>
+                <tr>
+                    <td>28198:65230</td>
+                    <td>Prepend 3x IX-MG</td>
+                </tr>
+
+                <tr>
+                    <td>65510:26162</td>
+                    <td rowspan="3">IX-RJ</td>
+                    <td>Prepend 1x IX-RJ</td>
+                </tr>
+                <tr>
+                    <td>65520:26162</td>
+                    <td>Prepend 2x IX-RJ</td>
+                </tr>
+                <tr>
+                    <td>65530:26162</td>
+                    <td>Prepend 3x IX-RJ</td>
+                </tr>
                 
             </tbody>
         </table>
-        <p>A Sempre se coloca à disposição, mas para agilizar seu atendimento, tenha em mãos a designação ded seu circuito sempre que necessitar acionar o suporte.</p>
+        <p>A Sempre se coloca à disposição, mas para agilizar seu atendimento, tenha em mãos a designação de seu circuito sempre que necessitar acionar o suporte.</p>
     </div>
 </body>
 
 <footer>
-    <img src="" alt="" >
-    <h3>Suporte Técnico 24 horas</h3>
-    <h3>NOC - 0800 600 0800</h3>
+    <div>
+        <img src="/img/Logo sempre branca.png" alt="logo_sempre_branca" >
+    </div>
+    <div>
+        <h3>Suporte Técnico 24 horas</h3>
+        <h3>NOC - 0800 600 0800</h3>
+    </div>
 </footer>
 </html>
