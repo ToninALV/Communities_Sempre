@@ -59,6 +59,11 @@ h3 {
 
 p {
     align-self: center;
+    width: 650px;
+}
+
+#ult_parag {
+    width: 900px;
 }
 
 #table_blackhole {
@@ -72,16 +77,14 @@ p {
 
 table {
     color: white;
-    text-shadow: 1px 2px 1px rgba(0,0,0,0.4);
+    
     border: 3px solid #F37435;
     height: 100%;
-    width: 60%;
+    width: 70%;
     table-layout: fixed;
     border-collapse: collapse;
 
 }
-
-
 
 table thead {
     align-items: center;
@@ -122,10 +125,6 @@ table tbody td {
     text-align: left;
 }
 
-
-
-
-
 footer {
     margin-top: 30px;
     bottom: 0;
@@ -134,7 +133,6 @@ footer {
     background-color: #F37435;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 
 }
@@ -145,14 +143,41 @@ footer div {
 
 footer h3 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     margin: 0;
     
 }
 
+#numeros {
+    display: flex;
+    
+}
+
+.num {
+    align-content: flex-start;
+    align-self: center;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
+#email {
+    font-size: 18px;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    font-weight: 700;
+}
+
 footer img {
-    width: 250px;
+    width: 220px;
     height: 115px;
 
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 8px 0 0 0;
+    font-size: 20px;
+    
 }
