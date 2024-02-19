@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEMPRE INTERNET - ASN28198</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-    <div>
-        <img id="logo_sempre" src="img/Logo sempre branca fundo azul.png" alt="logo_sempre">
+    <div id="content">
+        <div id="div_logo">
+            <img id="logo_sempre" src="img/Logo sempre branca fundo azul.png" alt="logo_sempre">
+        </div>
         <h1>SEMPRE INTERNET - ASN28198</h1>
         <h2>BGP COMMUNITIES</h2>
         <h3>Communities Especiais</h3>
-        <table id="table_blackhole">
+        <table id="table_blackhole" class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -30,12 +34,12 @@
             </tbody>
         </table>
 
-        <h2>Communities de Engenharia de Tráfego</h2>
+        <h2>Communities de Engenharia de Tráfego</h3>
         
         <p>O uso dessas communities permite que os clientes manipulem os anúncios da maneira que acharem melhor para a sua rede.</p>
 
         <h3>TRÂNSITO</h3>
-        <table>
+        <table class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -69,7 +73,7 @@
         </table>
 
         <h3>CDN</h3>
-        <table>
+        <table class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -98,7 +102,7 @@
         </table>
 
         <h3>IX</h3>
-        <table>
+        <table class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -127,7 +131,7 @@
         </table>
 
         <h3>PEERING</h3>
-        <table>
+        <table class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -145,7 +149,7 @@
         </table>
 
         <h3>PNI</h3>
-        <table>
+        <table class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -159,10 +163,10 @@
                     <td>PNI</td>
                     <td>Não anunciar para todos os PNI abaixo</td>
                 </tr>
-                    <tr><td>28198:64901</td>
+                    <td>28198:64901</td>
                     <td>GOOGLE</td>
                     <td>Não anunciar para PNI Google</td>
-                </tr><tr>
+                <tr>
                     <td>28198:64902</td>
                     <td>GLOBO-MG</td>
                     <td>Não anunciar para Globo-MG</td>
@@ -190,14 +194,28 @@
                 <tr>
                     <td>28198:64907</td>
                     <td>AKAMAI</td>
-                    <td>Não anunciar para PNI Akakmai</td>
+                    <td>Não anunciar para PNI Akamai</td>
                 </tr>
-                    
+                <tr>
+                    <td>28198:64909</td>
+                    <td>CDNTV</td>
+                    <td>Não anunciar para PNI CDNTV</td>
+                </tr>
+                <tr>
+                    <td>28198:64910</td>
+                    <td>FASTLY</td>
+                    <td>Não anunciar para PNI Fastly</td>
+                </tr>
+                <tr>
+                    <td>28198:64911</td>
+                    <td>BYTEDANCE</td>
+                    <td>Não anunciar para PNI Bytedance</td>
+                </tr>   
             </tbody>
         </table>
 
         <h3>PREPEND</h3>
-        <table id="table_preppend">
+        <table id="table_preppend" class="rTable">
             <thead>
                 <tr>
                     <th>Community</th>
@@ -247,7 +265,7 @@
                     <td>65531:23106</td>
                     <td>Prepend 3x ATC</td>
                 </tr>
-                
+
                 <tr>
                     <td>65511:13786</td>
                     <td rowspan="3">Seaborn</td>
@@ -303,16 +321,14 @@
                     <td>65530:26162</td>
                     <td>Prepend 3x IX-RJ</td>
                 </tr>
-                
             </tbody>
         </table>
         <p id="ult_parag">A Sempre se coloca à disposição, mas para agilizar seu atendimento, tenha em <br>mãos a designação de seu circuito sempre que necessitar acionar o suporte.</p>
     </div>
-
-
+</body>
 <footer>
     <div>
-        <img src="img/Logo sempre branca.png" alt="logo_sempre_branca">
+        <img src="img/Logo sempre branca.png" alt="logo_sempre_branca" >
     </div>
     <div>
         <h3>Suporte Técnico <br>NOC 24 horas</h3>
@@ -321,11 +337,9 @@
         <p class="num">0800 600 0800</p>
         <p class="num">(31) 3987 - 0800</p>
         <p class="num">(31) 3987 - 0501</p>
-
     </div>
     <div>
-        
         <p id="email">noc@sempre.net.br</p>
     </div>
 </footer>
-</body>
+</html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 
+* {
+    
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -23,10 +27,6 @@ div {
     color: white;
     align-items: center;
     
-}
-
-#logo {
-    margin: 50px;
 }
 
 #logo_sempre {
@@ -77,7 +77,6 @@ p {
 
 table {
     color: white;
-    
     border: 3px solid #F37435;
     height: 100%;
     width: 70%;
@@ -91,17 +90,12 @@ table thead {
     width: 80%;
 }
 
-table thead tr {
-    
-}
-
 table thead tr th {
     width: 180px;
     padding: 10px 10px 10px 10px;
     border: 1px 1px 1px 1px;
     border-color: #F37435;
     border-style: solid;
-    border-collapse: collapse;
     text-align: center;
     font-size: 20;
     
@@ -110,10 +104,6 @@ table thead tr th {
 table tbody {
     width: 80%;
     align-items: center;
-}
-
-table tbody tr {
-    
 }
 
 table tbody td {
@@ -128,7 +118,7 @@ table tbody td {
 footer {
     margin-top: 30px;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 130px;
     background-color: #F37435;
     display: flex;
@@ -151,20 +141,21 @@ footer h3 {
 
 #numeros {
     display: flex;
-    
+
 }
 
 .num {
-    align-content: flex-start;
     align-self: center;
     text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
     font-weight: 700;
+    width: 50%;
 }
 
 #email {
     font-size: 18px;
     text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
     font-weight: 700;
+    width: 50%;
 }
 
 footer img {
@@ -180,4 +171,119 @@ footer p {
     margin: 8px 0 0 0;
     font-size: 20px;
     
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #div_logo {
+        width: 100%;
+        padding: 30px 0 20px 0;
+    }
+
+    #logo_sempre {
+        padding: 30px 0 20px 0;
+        width: 220px;
+        height: 100px;
+    }
+
+    h1 {
+        margin: 0;
+        border-bottom: 1px solid #F37435;
+        font-size: 23px;
+    }
+
+    h2 {
+        color: white;
+        margin: 0;
+        margin-top: 12px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #F37435;
+        font-size: 18px;
+    }
+
+    p {
+        align-self: center;
+        width: 140%;
+    }
+
+    #ult_parag {
+        width: 140%;
+        align-self: center;
+    }
+    
+    #table_blackhole {
+        width: 130%;
+        margin-bottom: 50px;
+    }
+    
+    #table_preppend {
+        width: 125%;
+    }
+
+    table {
+        color: white;
+        height: 100%;
+        width: 140%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        
+    
+    }
+    
+    table thead {
+        align-items: center;
+        width: 80%;
+        display: none;
+    }
+
+    table tbody td {
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        
+        text-align: left;
+    }
+
+    table tbody tr {
+        width: 100%;
+
+    }
+    
+    table thead tr th {
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        border: none;
+        
+        text-align: center;
+        font-size: 20;
+        
+    }
+    
+    table tbody {
+        width: 80%;
+        align-items: flex-start;
+    }
+
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        gap: 30px;
+    }
+    
+    
+    
+
 }
