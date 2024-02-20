@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
 
-* {
-    
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -149,6 +145,7 @@ footer h3 {
     text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
     font-weight: 700;
     width: 50%;
+    font-size: 100%;
 }
 
 #email {
@@ -233,45 +230,41 @@ footer p {
         color: white;
         height: 100%;
         width: 140%;
-        table-layout: fixed;
+        table-layout: auto;
         border-collapse: collapse;
-        display: flex;
-        flex-direction: column;
-        border: none;
-        
-    
+        display: inline-table;
+        font-size: 14px;
     }
     
     table thead {
         align-items: center;
-        width: 80%;
-        display: none;
+        width: 100%;
     }
 
     table tbody td {
-        width: 80%;
+        width: 100%;
         padding: 10px 10px 10px 10px;
-        
+        border: solid 3px #F37435;
         text-align: left;
     }
 
     table tbody tr {
         width: 100%;
+        border: solid 3px #F37435;
 
     }
     
     table thead tr th {
-        width: 80%;
+        width: 100%;
         padding: 10px 10px 10px 10px;
-        border: none;
-        
+        border: solid 3px #F37435;
         text-align: center;
         font-size: 20;
         
     }
     
     table tbody {
-        width: 80%;
+        width: 100%;
         align-items: flex-start;
     }
 
@@ -282,8 +275,29 @@ footer p {
         height: 500px;
         gap: 30px;
     }
-    
-    
-    
-
 }
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 850px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        padding-top: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .num {
+        align-self: center;
+        text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+        font-weight: 700;
+        width: 50%;
+        font-size: 80%;
+        
+    }
+}
+
+
